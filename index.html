@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Flights Website</title>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/bootstrap-social.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body onload="document.getElementById('first-frame').src='flights.html'" onload>
+	
+	<!-- Menu Begin-->
+	<nav class="navbar-default navbar-inverse first-nav"  role="navigation">
+		<div style="max-width: 960px; margin: 0 auto;">
+			<a href="#" class="navbar-brand captain"><img src="images/captain-default.png" class="img-responsive" alt="Logo"></a>
+			<div class="navbar-header">
+	           	<button type="button" id="collapse-button" class="navbar-toggle" data-toggle="collapse" data-target="#example-nav">
+	              	<span class="sr-only">toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </button>
+	            <a href="#" class="navbar-toggle" id="collapse-tell" data-toggle="collapse"><span class="glyphicon glyphicon-phone" style="color: white; font-size: 18px;"></span></a>   
+	            <a href="#" class="navbar-brand logo"><img src="images/logo-default.png" class="img-responsive" alt="Logo"></a>
+	        </div>        
+	        <span href="#" class="navbar-brand logo" id="logo1"><span class="glyphicon glyphicon-phone"></span> 111 222</span>
+	        <a href="#" class="navbar-brand" id="logo2"> My Wishlist</a>
+	    </div>
+	</nav>
+	<nav class="navbar-default navbar-inverse sec-nav"  role="navigation">
+		<div class="container-fluid" style="padding: 0;">
+			<div class="collapse navbar-collapse" id="example-nav">
+				<div style="max-width: 960px; margin: 0 auto;">
+	            	<ul class="nav navbar-nav nav-ul">
+	                	<li><a class="menu-a"  href="#"><span class="glyphicon glyphicon-home menu-glyph"></span> Home</a></li>
+	                	<li><a class="menu-a"  href="#"><span class="glyphicon glyphicon-envelope menu-glyph"></span> Get a Quote</a></li>
+	                	<li><a class="menu-a"  href="#"><span class="glyphicon glyphicon-plane menu-glyph"></span> Flights</a></li>
+	                	<li><a class="menu-a"  href="#"><span class="glyphicon glyphicon-home menu-glyph"></span> Holidays</a></li>
+	                	<li><a class="menu-a"  href="#"><span class="glyphicon glyphicon-envelope menu-glyph"></span> Hotels</a></li>
+	                	<li><a class="menu-a"  href="#"><span class="glyphicon glyphicon-plane menu-glyph"></span> Rail</a></li>
+	                	<li><a class="menu-a"  href="#"><span class="glyphicon glyphicon-envelope menu-glyph"></span> Tours</a></li>
+	                	<li><a class="menu-a"  href="#"><span class="glyphicon glyphicon-home menu-glyph"></span> Cruises</a></li>
+	                	<li><a class="menu-a"  href="#"><span class="glyphicon glyphicon-plane menu-glyph"></span> Car Hire</a></li>
+	                	<li><a class="menu-a"  href="#"><span class="glyphicon glyphicon-envelope menu-glyph"></span> Extras</a></li>
+	                	<li><a class="menu-a"  href="#"><span class="glyphicon glyphicon-home menu-glyph"></span> Destination</a></li>
+	                	<li><a class="menu-a"  href="#"><span class="glyphicon glyphicon-envelope menu-glyph"></span> Deals</a></li>
+	                	<li><a class="menu-a"  href="#"><span class="glyphicon glyphicon-home menu-glyph"></span> Contact</a></li>
+	                	<li><a class="menu-a"  href="#"><span class="glyphicon glyphicon-plane menu-glyph"></span> Experts</a></li>
+	                	<li><a href="#"><span class="glyphicon glyphicon-search" style="font-size: 15px;"></span></a></li>
+	                </ul>
+	            </div>
+	        </div>            
+	    </div>
+	</nav>
+	<!-- Menu End-->
+	<!-- carousel-->
+	<div class="containner-fluid" style="position: relative;">
+	<div class="carousel slide text-center" id="myCarousel" data-ride="carousel">
+		<!-- indicators-->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+		</ol>
+		<!-- carousel inner-->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="images/slide1.png" alt="slide 1" class="carousel-img">
+			</div>
+			<div class="item">
+				<img src="images/slide2.png" alt="slide 2" class="carousel-img">
+			</div>
+		</div>
+	</div>
+	</div>
+	<!--Carousel End-->
+	<!--Search-panel-->
+	<div class="container-fluid" style="background-color: #bbbbbb;">
+		<div class="search-panel">
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="search-menu text-center">
+						<li onclick="document.getElementById('first-frame').src='flights.html'"><button><span class="glyphicon glyphicon-home"></span> Flights</button></li>
+						<li onclick="document.getElementById('first-frame').src='Holidays.html'"><button><span class="glyphicon glyphicon-envelope"></span> Holidays</button></li>
+						<li onclick="document.getElementById('first-frame').src='flights.html'"><button><span class="glyphicon glyphicon-plane"></span> Tours</button></li>
+						<li onclick="document.getElementById('first-frame').src='Holidays.html'"><button><span class="glyphicon glyphicon-home"></span> Car Hire</button></li>
+						<li onclick="document.getElementById('first-frame').src='flights.html'"><button><span class="glyphicon glyphicon-envelope"></span> Contacts</button></li>
+						<li onclick="document.getElementById('first-frame').src='Holidays.html'"><button><span class="glyphicon glyphicon-plane"></span> Rail</button></li>
+						<li onclick="document.getElementById('first-frame').src='flights.html'"><button><span class="glyphicon glyphicon-home"></span> Extras</button></li>
+						<li onclick="document.getElementById('first-frame').src='Holidays.html'"><button><span class="glyphicon glyphicon-envelope"></span> Experts</button></li>
+					</ul>
+				</div>
+			</div>
+			<iframe src="flights.html" id="first-frame" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0"></iframe>
+			
+		</div>
+	</div>
+	<!--Search-panel End-->
+	<!--Main Content-->
+	<div class="container" ng-app="">
+		<div class="row text-center" style="padding: 20px; margin-right: 1px;">
+			<div class="col-md-8">
+				<div style="text-align: justify;">
+					<p>Flight Centre is Australia's leading travel agent, offering cheap flights (domestic and international), holiday packages, cruises, ski holidays, last minute hotel deals, travel insurance and much more.</p>
+				</div>
+				<div>
+					<ul class="nav nav-tabs">
+						<li class="active"><a data-toggle="tab" href="#home" class="tab-a">INTERNATIONAL FLIGHTS</a></li>
+						<li><a data-toggle="tab" href="#menu1" class="tab-a">DOMESTIC FLIGHTS</a></li>
+						<li><a data-toggle="tab" href="#menu2" class="tab-a">MULTI-STOP</a></li>
+						<li><a data-toggle="tab" href="#menu2" class="tab-a">ABOUT FLIGHT CENTER</a></li>
+					</ul>
+					<div class="tab-content">
+					    <div id="home" class="tab-pane fade in active">
+						    <table class="table table-bordered" style="margin-top: 20px;">
+							    <thead>
+							    	<tr>
+							        	<th>
+							        		<select class="form-control" ng-model="city">
+												<option value="sydney to" selected="selected">Sydney to</option>
+												<option value="melbourne to">Melbourne to</option>
+												<option value="Brisbane to" selected>Brisbane to</option>
+												<option value="sydney to">Sydney to</option>
+												<option value="melbourne to">Melbourne to</option>
+												<option value="Brisbane to">Brisbane to</option>
+											</select>
+							        	</th>
+							        	<th>FLIGHTS</th>
+							        	<th>FLIGHTS PLUS</th>
+							    	</tr>
+							    </thead>
+							    <tbody>
+							    	<tr>
+							        	<td class="table-first-td">
+							        		<span class="table-row-span">{{city | uppercase}}</span> <br> <a href="#" class="table-first-col-a">Auckland</a>
+							        	</td>
+							        	<td class="table-other-td">
+							        		<span class="table-row-span">RETURN FROM</span> <br> <a href="#" class="table-other-col-a">$313</a>
+							        	</td>
+							        	<td class="table-other-td">
+							        		<span class="table-row-span">RETURN FROM</span> <br> <a href="#" class="table-other-col-a">$500</a>
+							        	</td>
+							    	</tr>
+							    	<tr>
+							        	<td class="table-first-td">
+							        		<span class="table-row-span">{{city | uppercase}}</span> <br> <a href="#" class="table-first-col-a">Singapore</a>
+							        	</td>
+							        	<td class="table-other-td">
+							        		<span class="table-row-span">RETURN FROM</span> <br> <a href="#" class="table-other-col-a">$340</a>
+							        	</td>
+							        	<td class="table-other-td">
+							        		<span class="table-row-span">RETURN FROM</span> <br> <a href="#" class="table-other-col-a">$515</a>
+							        	</td>
+							    	</tr>
+							    	<tr>
+							        	<td class="table-first-td">
+							        		<span class="table-row-span">{{city | uppercase}}</span> <br> <a href="#" class="table-other-col-a">Bankok</a>
+							        	</td>
+							        	<td class="table-other-td">
+							        		<span class="table-row-span">RETURN FROM</span> <br> <a href="#" class="table-other-col-a">$700</a>
+							        	</td>
+							        	<td class="table-other-td">
+							        		<span class="table-row-span">RETURN FROM</span> <br> <a href="#" class="table-other-col-a">$1000</a>
+							        	</td>
+							    	</tr>
+							    	<tr>
+							        	<td class="table-first-td">
+							        		<span class="table-row-span">{{city | uppercase}}</span> <br> <a href="#" class="table-first-col-a">Bali</a>
+							        	</td>
+							        	<td class="table-other-td">
+							        		<span class="table-row-span">RETURN FROM</span> <br> <a href="#" class="table-other-col-a">$360</a>
+							        	</td>
+							        	<td class="table-other-td">
+							        		<span class="table-row-span">RETURN FROM</span> <br> <a href="#" class="table-other-col-a">$630</a>
+							        	</td>
+							    	</tr>
+							    	<tr>
+							        	<td class="table-first-td">
+							        		<span class="table-row-span">{{city | uppercase}}</span> <br> <a href="#" class="table-first-col-a">Phuket</a>
+							        	</td>
+							        	<td class="table-other-td">
+							        		<span class="table-row-span">RETURN FROM</span> <br> <a href="#" class="table-other-col-a">$850</a>
+							        	</td>
+							        	<td class="table-other-td">
+							        		<span class="table-row-span">RETURN FROM</span> <br> <a href="#" class="table-other-col-a">$1200</a>
+							        	</td>
+							    	</tr>
+							    	<tr>
+							        	<td class="table-first-td">
+							        		<span class="table-row-span">{{city | uppercase}}</span> <br> <a href="#" class="table-first-col-a">Fiji</a>
+							        	</td>
+							        	<td class="table-other-td">
+							        		<span class="table-row-span">RETURN FROM</span> <br> <a href="#" class="table-other-col-a">$440</a>
+							        	</td>
+							        	<td class="table-other-td">
+							        		<span class="table-row-span">RETURN FROM</span> <br> <a href="#" class="table-other-col-a">$725</a>
+							        	</td>
+							    	</tr>
+							    	<tr>
+							        	<td class="table-first-td">
+							        		<span class="table-row-span">{{city | uppercase}}</span> <br> <a href="#" class="table-first-col-a">Hawaii</a>
+							        	</td>
+							        	<td class="table-other-td">
+							        		<span class="table-row-span">RETURN FROM</span> <br> <a href="#" class="table-other-col-a">$286</a>
+							        	</td>
+							        	<td class="table-other-td">
+							        		<span class="table-row-span">RETURN FROM</span> <br> <a href="#" class="table-other-col-a">$510</a>
+							        	</td>
+							    	</tr>
+							    	<tr>
+							        	<td class="table-first-td">
+							        		<span class="table-row-span">{{city | uppercase}}</span> <br> <a href="#" class="table-first-col-a">Los Angeles</a>
+							        	</td>
+							        	<td class="table-other-td">
+							        		<span class="table-row-span">RETURN FROM</span> <br> <a href="#" class="table-other-col-a">$535</a>
+							        	</td>
+							        	<td class="table-other-td">
+							        		<span class="table-row-span">RETURN FROM</span> <br> <a href="#" class="table-other-col-a">$930</a>
+							        	</td>
+							    	</tr>
+							    	<tr>
+							        	<td class="table-first-td">
+							        		<span class="table-row-span">{{city | uppercase}}</span> <br> <a href="#" class="table-first-col-a">London</a>
+							        	</td>
+							        	<td class="table-other-td">
+							        		<span class="table-row-span">RETURN FROM</span> <br> <a href="#" class="table-other-col-a">$650</a>
+							        	</td>
+							        	<td class="table-other-td">
+							        		<span class="table-row-span">RETURN FROM</span> <br> <a href="#" class="table-other-col-a">$1010</a>
+							        	</td>
+							    	</tr>
+							    	<tr>
+							        	<td class="table-first-td">
+							        		<span class="table-row-span">{{city | uppercase}}</span> <br> <a href="#" class="table-first-col-a">New York</a>
+							        	</td>
+							        	<td class="table-other-td">
+							        		<span class="table-row-span">RETURN FROM</span> <br> <a href="#" class="table-other-col-a">$410</a>
+							        	</td>
+							        	<td class="table-other-td">
+							        		<span class="table-row-span">RETURN FROM</span> <br> <a href="#" class="table-other-col-a">$715</a>
+							        	</td>
+							    	</tr>
+							    </tbody>
+							</table>
+							<a href="#" class="btn btn-primary" style="width: 100%; text-align: right; margin-bottom: 10px;">More international flights »</a>
+					    </div>
+						<div id="menu1" class="tab-pane fade">
+						    <h3>Menu 1</h3>
+						    <p>Some content in menu 1.</p>
+						</div>
+						<div id="menu3" class="tab-pane fade">
+						    <h3>Menu 3</h3>
+						    <p>Some content in menu 3.</p>
+						</div>
+					</div>
+				</div>
+				<div class="map" style="margin-top: 30px; margin-bottom: 30px;">
+					<a href="#"><div id="america">AMERICA</div></a>
+					<a href="#"><div id="europe">EUROPE</div></a>
+					<a href="#"><div id="africa">AFRICA</div></a>
+					<a href="#"><div id="asia">ASIA</div></a>
+				</div>
+				<div id="experience">
+					<div id="experience-head-first"><span id="experience-head-first-span1">Sharing our travel experience...</span><span><a href="#" id="experience-head-first-span2-a">Travel blog »</a></span></div>
+					<div class="row" id="experience-head-sec">
+						<div class="col-sm-3" style="padding: 0px; margin: 0px; float: left; text-align: left;">
+							<img src="images/mthood-molly-banner.jpg" alt="mthood-molly-banner" id="experience-head-sec-col1">
+						</div>
+						<div class="col-sm-9" style="padding: 10px; padding-right: 0; text-align: left;">
+							<a href="#"><h3>Wild In Oregon: From Wild To Gilmore Girls</h3></a>
+							<p>February 24, 2017 by <a href="#" style="font-size: smaller;">Cassandra Laffey</a></p>
+							<p style="text-align: justify;">In the recent Netflix reboot of the fast-talking caffeine-fuelled Gilmore Girls, mother Lorelai, at a crossroads in her life, decides to “do Wild”. Since its publication in 2012, Cheryl Strayed’s memoir Wild: Lost and Found on the Pacific Crest Trail and the 2014 film adaptation of the same name have inspired women to hit the Pacific Crest Trail.The Pacific Crest Trail (PCT) is a 4,265km-long trail, running from Mexico to Canada through California, Oregon and Washington State <a href="#">more ></a></p>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="gallery">
+					<div class="col-xs-4 gallery-div">
+						<img src="images/gallery1.jpg" alt="gallery1" class="img-responsive gallery-img">
+						<div class="gallery-cap"><a href="#">Travel Inspiration: 14 Places To Help You Plan Your Next... »</a></div>
+					</div>
+					<div class="col-xs-4 gallery-div" id="gallery-div2">
+						<img src="images/gallery2.jpg" alt="gallery2" class="img-responsive gallery-img">
+						<div class="gallery-cap" id="gallery-cap2"><a href="#">Melbourne Tops Aussie Travel Wish List »</a></div>
+					</div>
+					<div class="col-xs-4 gallery-div">
+						<img src="images/gallery3.jpg" alt="gallery3" class="img-responsive gallery-img">
+						<div class="gallery-cap"><a href="#">All Roads Lead North »</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="row text-center" >
+					<div class="col-sm-12 right-content thumbnail">
+						<a href="#"><img src="images/flightclub.gif" class="img-responsive" alt="flightclub"></a>
+						
+							<button type="button" class="btn" id="img-btn">Signup for execlusive Flight Club deals</button>
+						
+					</div>
+					<div class="col-sm-12 right-content thumbnail">
+						<a href="#"><img src="images/flight.jpg" class="img-responsive" alt="flight"></a>
+					</div>
+					<div class="col-sm-12 right-content thumbnail">
+						<a href="#"><img src="images/flight1.jpg" class="img-responsive" alt="flight"></a>
+					</div>
+					<div class="col-sm-12 right-content thumbnail">
+						<a href="#"><img src="images/flight.jpg" class="img-responsive" alt="flight"></a>
+					</div>
+					<div class="col-sm-12 right-content thumbnail">
+						<a href="#"><img src="images/flight1.jpg" class="img-responsive" alt="flight"></a>
+					</div>
+					<div class="col-sm-12 right-content thumbnail">
+						<a href="#"><img src="images/flight.jpg" class="img-responsive" alt="flight"></a>
+					</div>
+					<div class="col-sm-12 right-content thumbnail">
+						<a href="#"><img src="images/flight1.jpg" class="img-responsive" alt="flight"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Main Content End-->
+	<!--Footer-->
+	<div class="container-fluid">
+		<div class="row" id="footer1">
+			<div class="col-sm-6 footer1-col">
+				<a class="btn btn-social-icon btn-facebook"><span class="fa fa-facebook"></span></a>
+				<a class="btn btn-social-icon btn-twitter"><span class="fa fa-twitter"></span></a>
+				<a class="btn btn-social-icon btn-google-plus"><span class="fa fa-google-plus"></span></a>
+				<a class="btn btn-social-icon btn-instagram"><span class="fa fa-instagram"></span></a>
+			</div>
+			<div class="col-sm-6 footer1-col">
+				<a class="btn btn-block btn-social btn-twitter">
+    				<span class="fa fa-hand-o-right"></span> Subscribe to execlusive travel deals
+  				</a>
+			</div>
+		</div>
+		<div class="row text-center" id="footer2">
+			<div class="col-xs-8 col-xs-offset-2">
+				<p>© Flight Centre Travel Group Limited trading as Flight Centre ABN 25 003 377 188 ACN 003 377 188</p>
+				<p>ATAS - Travel Accredited No. A10412.</p>
+			</div>
+		</div>
+	<!--Footer End-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</body>
+</html>
